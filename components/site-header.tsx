@@ -21,7 +21,7 @@ export function SiteHeader() {
           variant="ghost"
           size="icon"
           onClick={toggleSidebar}
-        >
+        > 
           <SidebarIcon />
         </Button>
         <h1 className="m-auto text-5xl text-white">Store Keeper Area</h1>
