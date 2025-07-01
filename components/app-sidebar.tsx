@@ -1,28 +1,25 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
-  BookOpen,
-  Bot,
-  Command,
-  Settings2,
-  SquareTerminal,
-} from "lucide-react"
+  Ban,
+  CirclePlus,
+  History,
+  Home,
+  NotebookText,
+  UserCircle,
+} from "lucide-react";
+// import { MdOutlineWorkHistory } from "react-icons/md";
 
-import { NavMain } from "@/components/nav-main"
-import { NavUser } from "@/components/nav-user"
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarHeader,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-} from "@/components/ui/sidebar"
-import Link from "next/link"
+} from "@/components/ui/sidebar";
 
-const data = {
+export const data = {
   user: {
     name: "shadcn",
     email: "m@example.com",
@@ -30,32 +27,38 @@ const data = {
   },
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Items",
+      url: "/items",
+      icon: Home,
       isActive: true,
-      
     },
     {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      
+      title: "Add Items",
+      url: "/addItems",
+      icon: CirclePlus,
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      
+      title: "History",
+      url: "/history",
+      icon: History,
     },
     {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-    
+      title: "Technicians",
+      url: "/technicians",
+      icon: UserCircle,
     },
-  ]
-}
+    {
+      title: "Disabled",
+      url: "/disabled",
+      icon: Ban,
+    },
+    {
+      title: "Manage Store",
+      url: "/manageStore",
+      icon: NotebookText,
+    },
+  ],
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -63,23 +66,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       className="top-(--header-height) h-[calc(100svh-var(--header-height))]!"
       {...props}
     >
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
-              <Link href="/">
-                <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  <Command className="size-4" />
-                </div>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">Acme Inc</span>
-                  <span className="truncate text-xs">Enterprise</span>
-                </div>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
@@ -87,5 +73,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
-  )
+  );
 }

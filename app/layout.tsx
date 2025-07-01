@@ -3,18 +3,22 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AppSidebar } from "@/components/app-sidebar";
 import { SiteHeader } from "@/components/site-header";
+import { Inter } from "next/font/google"
+const inter = Inter({
+  subsets:['latin']
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning className={inter.className}>
         <head />
         <body>
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="ligth"
             enableSystem
             disableTransitionOnChange
           >
@@ -24,7 +28,7 @@ export default function RootLayout({
                 <div className="flex flex-1">
                   <AppSidebar />
                   <SidebarInset>
-                    <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="flex flex-1 flex-col gap-4 p-4 bg-(--muted)">
                       {children}
                     </div>
                   </SidebarInset>
