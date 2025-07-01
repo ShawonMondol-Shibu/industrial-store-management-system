@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -19,16 +20,17 @@ export default function AddForm() {
         { label: "Date of delivery", type: "date", id: "date", placeHolder: "Enter date of delivery" },
     ]
     return (
-        <div className='w-lg bg-white m-auto p-5'>
-            <CardTitle>Add Item</CardTitle>
-            <form action="">
+        <div className='w-lg bg-white m-auto p-5 rounded-xl border'>
+            <CardTitle className='text-2xl font-medium'>New Item</CardTitle>
+            <form action="" className=''>
                 {
-                    formData.map((form: formType) => <div key={form.id} className='flex items-center gap-5'>
-                        <Label htmlFor={form.id}>{form.label}</Label>
+                    formData.map((form: formType) => <div key={form.id} className='flex flex-wrap items-center justify-between gap-5 my-8'>
+                        <Label htmlFor={form.id} className='flex-1/6'>{form.label}</Label>
                         <Input id={form.id} className='border flex-1/2' placeholder={form.placeHolder} />
                     </div>)
                 }
 
+<Button variant={'default'} size={"lg"} className='bg-(--darkOrange) cursor-pointer m-auto'>Add Product</Button>
             </form>
         </div>
     )

@@ -12,7 +12,7 @@ import React, { Suspense } from "react";
 export default function Page() {
   return (
     <>
-      <div className="flex gap-5 items-center justify-between bg-white p-4 rounded-full shadow-gray-200 shadow-lg">
+      <div className="flex gap-5 items-center justify-between bg-white p-4 rounded-full shadow-gray-200 shadow-none outline hover:border-none hover:shadow-lg transition-all duration-200 ease-in">
         <SearchForm className="flex-1/3" />
         <div className="flex items-center gap-5">
           <Notification />
@@ -25,7 +25,7 @@ export default function Page() {
         <Button
           variant={"outline"}
           size={"default"}
-          className="border-(--darkOrange)"
+          className="border-(--darkOrange) hover:bg-(--darkOrange) hover:text-white"
           asChild
         >
           <Link href={"/addItems"}>

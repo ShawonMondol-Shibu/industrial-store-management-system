@@ -11,9 +11,9 @@ import Link from "next/link";
 export default function ItemsCard() {
   return (
     <>
-      <Link href={"#"} className="m-auto w-fit">
-        <Card className="w-full max-w-sm p-0  rounded-none bg-transparent border-none shadow-none">
-          <CardHeader className="p-0 relative border"> 
+      <Link href={"#"} className="m-auto w-fit hover:scale-120 group transition-all duration-200 ease-linear ">
+        <Card className="w-full max-w-sm p-0  rounded-none bg-transparent group-hover:bg-background border-none group-hover:border shadow-none group-hover:shadow">
+          <CardHeader className="p-0 relative border group-hover:border-none"> 
               <Image
                 src={"/images/image 2.png"}
                 width={300}
@@ -29,7 +29,7 @@ export default function ItemsCard() {
                 Edit
               </Button>
           </CardHeader>
-          <CardFooter className="flex-wrap p-0 bg-white border">
+          <CardFooter className="flex-wrap p-0 bg-white border group-hover:border-none">
             
             <div className="flex items-center justify-between w-full">
               <Button variant={"link"} className="text-base font-bold underline">IT009</Button>
