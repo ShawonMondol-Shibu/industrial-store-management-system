@@ -1,8 +1,6 @@
-import { SearchForm } from "@/components/search-form";
 import ItemsCard from "@/components/shared/items-card";
-import Notification from "@/components/shared/Notification";
+import SearchMenu from "@/components/shared/SearchMenu";
 import Skeleton from "@/components/shared/skeleton";
-import User from "@/components/shared/User";
 import { Button } from "@/components/ui/button";
 import { CardTitle } from "@/components/ui/card";
 import { CirclePlus } from "lucide-react";
@@ -12,13 +10,7 @@ import React, { Suspense } from "react";
 export default function Page() {
   return (
     <>
-      <div className="flex gap-5 items-center justify-between bg-white p-4 rounded-full shadow-gray-200 shadow-none outline hover:border-none hover:shadow-lg transition-all duration-200 ease-in">
-        <SearchForm className="flex-1/3" />
-        <div className="flex items-center gap-5">
-          <Notification />
-          <User />
-        </div>
-      </div>
+     <SearchMenu/>
 
       <div className="flex items-center justify-between">
         <CardTitle>All Items</CardTitle>
