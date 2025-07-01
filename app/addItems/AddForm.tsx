@@ -28,7 +28,7 @@ export default function AddForm() {
             <Input id={form.id} className='border flex-1/2' placeholder={form.placeHolder} />
             </div>)
             }
-            
+             
         </form>
     </div>
   )
