@@ -10,7 +10,8 @@ export default function SearchMenu() {
         <div className="flex items-center gap-5">
           <Notification />
           <User />
-        </div>
+        </div> 
       </div></>
   )
 }
+ 
