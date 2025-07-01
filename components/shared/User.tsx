@@ -10,7 +10,7 @@ export default function User() {
           {" "}
           <UserCircle2 size={30} />{" "}
         </PopoverTrigger>
-        <PopoverContent> hi </PopoverContent>
+        <PopoverContent> hi </PopoverContent> 
       </Popover>
     </>
   );
