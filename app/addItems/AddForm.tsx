@@ -20,7 +20,7 @@ export default function AddForm() {
     ]
   return (
     <div className='w-lg bg-white m-auto p-5'>
-        <CardTitle>Edit Item</CardTitle>
+        <CardTitle>Add Item</CardTitle>
         <form action="">
             {
                 formData.map((form:formType)=><div key={form.id} className='flex items-center gap-5'>
