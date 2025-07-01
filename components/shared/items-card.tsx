@@ -13,7 +13,7 @@ export default function ItemsCard() {
     <>
       <Link href={"#"} className="m-auto w-fit">
         <Card className="w-full max-w-sm p-0  rounded-none bg-transparent border-none shadow-none">
-          <CardHeader className="p-0 relative border">
+          <CardHeader className="p-0 relative border"> 
               <Image
                 src={"/images/image 2.png"}
                 width={300}
