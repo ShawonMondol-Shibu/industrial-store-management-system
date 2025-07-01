@@ -10,7 +10,7 @@ export default function Notification() {
           {" "}
           <Bell size={20} />{" "}
         </PopoverTrigger>
-        <PopoverContent> hi </PopoverContent>
+        <PopoverContent> hi </PopoverContent> 
       </Popover>
     </>
   );
