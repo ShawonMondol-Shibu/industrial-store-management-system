@@ -10,10 +10,10 @@ import { UserCircle2 } from "lucide-react";
 // import Image from "next/image";
 import React from "react";
 
-export default function TechniciansCard() {
+export default function TechniciansCard({className}:{className:string}) {
   return (
     <>
-      <Card className="w-full max-w-max rounded-4xl px-6 py-10 m-auto">
+      <Card className={`${className} w-full max-w-max rounded-4xl px-6 py-10 m-auto hover:scale-110 transition-all duration-200 ease`}>
         <CardHeader>
           <span className="rounded-full border-5 border-orange-400 w-[90px] h-[90px] flex ">
             <UserCircle2 size={50} className="m-auto"/>
