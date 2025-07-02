@@ -24,7 +24,7 @@ export function SiteHeader() {
         > 
           <SidebarIcon />
         </Button>
-        <h1 className="m-auto text-4xl text-white">Store Keeper Area</h1>
+        <h1 className="m-auto sm:text-4xl text-2xl text-white">Store Keeper Area</h1>
       </div>
     </header>
   );

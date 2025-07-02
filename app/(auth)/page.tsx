@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Page() {
@@ -23,7 +24,7 @@ export default function Page() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button variant={'default'} size={'lg'} className='bg-(--darkOrange) rounded w-full'>GO</Button>
+          <Button variant={'default'} size={'lg'} asChild className='bg-(--darkOrange) rounded w-full'><Link href={'/store-area/'}>GO</Link></Button>
         </CardFooter>
         </Card> 
     </div>

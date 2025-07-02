@@ -8,14 +8,11 @@ const inter = Inter({
   subsets:['latin']
 })
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning className={inter.className}>
-        <head />
-        <body>
+        <div className={inter.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="ligth"
@@ -36,8 +33,6 @@ export default function RootLayout({
               </SidebarProvider>
             </div>
           </ThemeProvider>
-        </body>
-      </html>
-    </>
+        </div>
   );
 }
