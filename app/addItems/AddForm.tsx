@@ -30,7 +30,7 @@ export default function AddForm() {
                     </div>)
                 }
 
-<Button variant={'default'} size={"lg"} className='bg-(--darkOrange) cursor-pointer m-auto'>Add Product</Button>
+                <Button variant={'default'} size={"lg"} className='bg-(--darkOrange) cursor-pointer m-auto'>Add Product</Button>
             </form>
         </div>
     )
