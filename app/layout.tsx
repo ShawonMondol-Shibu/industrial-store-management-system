@@ -28,7 +28,7 @@ export default function RootLayout({
                 <div className="flex flex-1">
                   <AppSidebar />
                   <SidebarInset>
-                    <div className="flex flex-1 flex-col gap-4 p-4 bg-(--muted)">
+                    <div className="flex flex-1 flex-col gap-4 p-6 bg-(--muted)">
                       {children}
                     </div>
                   </SidebarInset>
