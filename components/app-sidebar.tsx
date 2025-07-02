@@ -28,33 +28,33 @@ export const data = {
   navMain: [
     {
       title: "Items",
-      url: "/items",
+      url: "/store-area/items",
       icon: Home,
       isActive: true,
     },
     {
       title: "Add Items",
-      url: "/addItems",
+      url: "/store-area/addItems",
       icon: CirclePlus,
     },
     {
       title: "History",
-      url: "/history",
+      url: "/store-area/history",
       icon: History,
     },
     {
       title: "Technicians",
-      url: "/technicians",
+      url: "/store-area/technicians",
       icon: UserCircle,
     },
     {
       title: "Disabled",
-      url: "/disabled",
+      url: "/store-area/disabled",
       icon: Ban,
     },
     {
       title: "Manage Store",
-      url: "/manageStore",
+      url: "/store-area/manageStore",
       icon: NotebookText,
     },
   ],
