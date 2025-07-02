@@ -20,7 +20,7 @@ export default function Page() {
           className="border-(--darkOrange) hover:bg-(--darkOrange) hover:text-white"
           asChild
         >
-          <Link href={"/addItems"}>
+          <Link href={"/store-area/addItems"}>
             <CirclePlus fill="gray" stroke="white" className="size-5" />
             Add New
           </Link>

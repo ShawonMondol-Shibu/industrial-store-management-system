@@ -15,12 +15,12 @@ export default function Page() {
         <CardTitle className="text-2xl">All Technicians</CardTitle>
         <div className="flex items-center gap-10">
           <Button variant={"outline"} size={"lg"} asChild>
-            <Link href={"/addTechnician"}>
+            <Link href={"/store-area/addTechnician"}>
               <CirclePlus /> Add New
             </Link>
           </Button>
           <Button variant={"default"} size={"lg"} className="bg-(--darkOrange)">
-            <Link href={"/disabled"}> Disabled</Link>
+            <Link href={"/store-area/disabled"}> Disabled</Link>
           </Button>
         </div>
       </div>
