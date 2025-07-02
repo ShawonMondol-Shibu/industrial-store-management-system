@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { CirclePlus } from "lucide-react";
 import SearchMenu from "@/components/shared/SearchMenu";
 import TechniciansCard from "../technicians/TechniciansCard";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -13,12 +14,13 @@ export default function Page() {
       <div className="flex items-center justify-between gap-5 mt-10">
         <CardTitle className="text-2xl">All Technicians</CardTitle>
         <div className="flex items-center gap-10">
-          <Button variant={"outline"} size={"lg"}>
-            {" "}
-            <CirclePlus /> Add New
+          <Button variant={"outline"} size={"lg"} asChild>
+            <Link href={"/addTechnician"}>
+              <CirclePlus /> Add New
+            </Link>
           </Button>
           <Button variant={"default"} size={"lg"} className="bg-(--darkOrange)">
-            Disable
+            <Link href={"/disabled"}> Disabled</Link>
           </Button>
         </div>
       </div>
