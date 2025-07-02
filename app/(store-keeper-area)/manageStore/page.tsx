@@ -23,7 +23,7 @@ export default function Page() {
       <main className="mt-6">
         <section className="bg-white p-5 rounded-2xl border">
           <CardTitle className="text-xl">Overall Store</CardTitle>
-          <div className="flex flex-nowrap gap-10 items-center justify-between mt-10">
+          <div className="flex flex-wrap gap-10 items-center justify-between mt-10">
             {stores.map((store: storesType, _: number) => (
               <div key={_} className="leading-10">
                 <h3 className={`text-lg font-semibold ${store.color}`}>
